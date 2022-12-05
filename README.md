@@ -35,3 +35,12 @@ License
 .gitignore
 ...
 ```
+
+Environment Variable
+```
+ENV variables are defined in env.
+example file in main directory.
+```
+```
+Create .env file from env.example and update value of variables
+```
