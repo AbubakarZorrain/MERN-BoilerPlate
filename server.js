@@ -1,9 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const crudRouter = require('./controllerLayer/crud.controller');
-
+const env = require('dotenv').config()
 const app = express();
-const port = 3000;
+const port = process.env.SERVER_PORT
 
 app.get('/', (req, res) => res.send('Server File'));
 
@@ -11,7 +11,7 @@ app.use('/crud', crudRouter);
 // connect mongoDB
 // connect to user database using remote connection
 
-mongoose.connect('mongodb+srv://zorain:mnbv098765@cluster0.qqg6t.mongodb.net/MERN_BoilerPlate?retryWrites=true&w=majority');
+mongoose.connect(process.env.MONGO_URI);
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
