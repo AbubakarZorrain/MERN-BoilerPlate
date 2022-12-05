@@ -1,0 +1,30 @@
+{
+  "name": "mern-boilerplate",
+  "version": "1.0.0",
+  "description": "It is a boilerplate for MERN",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbubakarZorrain/MERN-BoilerPlate.git"
+  },
+  "keywords": [
+    "MERN",
+    "Boilerplate",
+    "AbubakarZorrain"
+  ],
+  "author": "Muhammad Abubakar Zorrain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AbubakarZorrain/MERN-BoilerPlate/issues"
+  },
+  "homepage": "https://github.com/AbubakarZorrain/MERN-BoilerPlate#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.5",
+    "nodemon": "^2.0.20"
+  }
+}
