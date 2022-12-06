@@ -1,7 +1,7 @@
 {
   "name": "mern-boilerplate",
   "version": "1.0.0",
-  "description": "It is a boilerplate for MERN",
+  "description": "It is a boilerplate for MERN. This is concerned to MERN BoilerPlate. MERN is a fullstack implementation in MongoDB, Expressjs, React/Redux, Nodejs.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,12 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AbubakarZorrain/MERN-BoilerPlate.git"
+    "url": "git+https://github.com/AbubakarZorrain/MERN-BoilerPlate.git",
+    "github page": "https://abubakarzorrain.github.io/MERN-BoilerPlate/"
   },
   "keywords": [
     "MERN",
     "Boilerplate",
-    "AbubakarZorrain"
+    "AbubakarZorrain",
+    "mern-boilerplate",
+    "mern-boilerplate-abubakarzorrain",
+    "node js",
+    "express js",
+    "react js",
+    "mongo db"
   ],
   "author": "Muhammad Abubakar Zorrain",
   "license": "MIT",
