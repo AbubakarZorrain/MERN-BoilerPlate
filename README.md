@@ -19,9 +19,20 @@ MERN stack is the idea of using Javascript/Node for fullstack web development.
 ## Clone or Download
 ```terminal
 $ git clone https://github.com/AbubakarZorrain/MERN-BoilerPlate.git
-$ yarn # or npm i
+```
+```
+$ yarn i
+```
+```   
+$ yarn start
 ```
 
+```
+$ npm i
+```
+```
+$ npm start
+```
 ## Project Structure
 ```terminal
 LICENSE
@@ -33,7 +44,6 @@ Service Layer
 DataBase Layer
 License
 .gitignore
-...
 ```
 
 ## Environment Variable
