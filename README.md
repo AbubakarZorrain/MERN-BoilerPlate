@@ -42,6 +42,20 @@ $ npm start
 ```
 ## Project Structure
 ```
+./client
+   public
+      index.html
+   src
+      app.css
+      App.js
+      index.css
+      index.js
+      reportWebVitals.js
+      setupTests.js
+   .gitignore
+   package.json
+   pacage-lock.json
+   README.md
 ./server
    server.js
    controllerLayer
