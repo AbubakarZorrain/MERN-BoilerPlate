@@ -1,13 +1,20 @@
-import React from "react";
+import React,{ useEffect, useState } from "react";
 import { Table } from '@mui/material';
 import { TableHead } from '@mui/material';
 import {TableRow} from '@mui/material';
 import { TableBody } from '@mui/material';
 import { TableCell } from '@mui/material';
-export default async function Users(){
-    await fetch('http://localhost:8000/crud/homecrud')
-    .then(response => response.json())
-    .then(data => console.log(data));
+export default function Users(){
+  const [users,setUsers] = useState([]);
+  useEffect(()=>{
+    fetch('http://localhost:8000/crud/homecrud')
+    .then((res)=>res.json())
+    .then((data)=>{
+      setUsers(data)
+    })
+
+  },[])
+  
     return (
       <div>
         <h1>Users</h1>
@@ -20,11 +27,16 @@ export default async function Users(){
                 </TableRow>
             </TableHead>
             <TableBody>
-                <TableRow>
-                    <TableCell>Abubakar</TableCell> 
-                    <TableCell>abubakarzorrain71@gmail.com</TableCell>
-                    <TableCell>07 Dec 2022</TableCell>
-                </TableRow>
+              {users.map((user,index)=>{
+                return(
+                  <TableRow key={index}>
+                    <TableCell>{user.name}</TableCell>
+                    <TableCell>{user.email}</TableCell>
+                    <TableCell>{user.created_at}</TableCell>
+                  </TableRow>
+                )
+              }
+              )}
             </TableBody>
         </Table>
       </div>
