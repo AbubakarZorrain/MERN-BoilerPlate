@@ -3,11 +3,11 @@ import { Table } from '@mui/material';
 import { TableHead } from '@mui/material';
 import {TableRow} from '@mui/material';
 import { TableBody } from '@mui/material';
-import { TableFooter } from '@mui/material';
 import { TableCell } from '@mui/material';
-export default class Users extends React.Component {
-    
-  render() {
+export default async function Users(){
+    await fetch('http://localhost:8000/crud/homecrud')
+    .then(response => response.json())
+    .then(data => console.log(data));
     return (
       <div>
         <h1>Users</h1>
@@ -29,5 +29,4 @@ export default class Users extends React.Component {
         </Table>
       </div>
     );
-  }
 }
