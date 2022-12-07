@@ -41,15 +41,20 @@ $ npm start
 4) nodemon: "^2.0.20"
 ```
 ## Project Structure
-```terminal
+```
+./server
+   server.js
+   controllerLayer
+      crud.controller.js
+   serviceLayer
+      crud.service.js
+   dataBaseLayer
+      user.model.js
+   package.json
+   pacage-lock.json
 LICENSE
-Server.js
-package.json
-pacage-lock.json
-Controller Layer
-Service Layer
-DataBase Layer
-License
+README.md
+example.env
 .gitignore
 ```
 
