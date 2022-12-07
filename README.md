@@ -46,6 +46,9 @@ $ npm start
    public
       index.html
    src
+      ./components
+         topBar.jsx
+         users.jsx
       app.css
       App.js
       index.css
@@ -58,11 +61,11 @@ $ npm start
    README.md
 ./server
    server.js
-   controllerLayer
+   ./controllerLayer
       crud.controller.js
-   serviceLayer
+   ./serviceLayer
       crud.service.js
-   dataBaseLayer
+   ./dataBaseLayer
       user.model.js
    package.json
    pacage-lock.json
