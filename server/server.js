@@ -1,10 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const crudRouter = require('./controllerLayer/crud.controller');
+var cors = require('cors')
 const env = require('dotenv').config()
 const app = express();
 const port = process.env.SERVER_PORT
-
+app.use(cors())
 app.get('/', (req, res) => res.send('Server File'));
 
 app.use('/crud', crudRouter);
