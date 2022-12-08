@@ -17,7 +17,6 @@ export default slice.reducer
 const { userAdded } = slice.actions
 export const addUser = ({ username }) => async dispatch => {
   try {
-    // const res = await api.post('/api/auth/login/', { username, password })
     dispatch(userAdded({username}));
   } catch (e) {
     return console.error(e.message);
