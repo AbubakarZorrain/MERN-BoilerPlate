@@ -57,6 +57,8 @@ $ npm start
       index.js
       reportWebVitals.js
       setupTests.js
+      counterSlice.js
+      store.js
    .gitignore
    package.json
    pacage-lock.json
