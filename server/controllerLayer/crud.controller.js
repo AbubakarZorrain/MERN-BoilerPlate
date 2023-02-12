@@ -18,5 +18,16 @@ crudRouter.post('/homecrud',async (req, res) => {
     await crudService.createUser(name, password, email, created_at, updated_at);
     res.send('User Created!');
 });
+crudRouter.put('/update/:id', async(req, res) => {
+    const id = req.params.id;
+    const query = req.query;
+    const name = query.name;
+    const email = query.email;
+    const password = query.password;
+    const created_at = query.created_at;
+    const updated_at = query.updated_at;
+    await crudService.updateUser(id, name, password, email, created_at, updated_at);
+    res.send('User Updated!');
+});
 
 module.exports = crudRouter;
